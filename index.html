@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src defer="script.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <!-- Header Section -->
@@ -52,18 +52,18 @@
 
         <div id="project">
           <h3>Project 2 - Learned CSS</h3>
-          <button popovertarget="details">Show Details</button>
+          <button id="button" popovertarget="details2">Show Details</button>
 
-          <div id="details" popover="manual">
+          <div id="details2" popover="manual">
             <p>Learned the basic styling features of CSS</p>
           </div>
         </div>
 
         <div id="project">
           <h3>Project 3 - Learned Javascript</h3>
-          <button popovertarget="details">Show Details</button>
+          <button popovertarget="details3">Show Details</button>
 
-          <div id="details" popover="manual">
+          <div id="details3" popover="manual">
             <p>Learned how to connect Javascript to HTML and use DOM</p>
           </div>
         </div>
@@ -73,10 +73,27 @@
     <!-- Contact Section -->
     <section id="contact">
       <h2>Contact Me</h2>
-      <p>
-        In the future, this will be a contact form. For now, just leave this as
-        a placeholder.
-      </p>
+      <form id="myForm">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" id="name" />
+        <span class="error" id="nameError"></span>
+        <br />
+        <br />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <span class="error" id="emailError"></span>
+        <br />
+        <br />
+
+        <label for="message">Type message here</label>
+        <br />
+        <input type="text" name="message" id="message" />
+        <br />
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
     </section>
 
     <!-- Footer Section -->

@@ -72,3 +72,28 @@ footer {
         margin: 10px;
     }
 }
+
+button{
+    background-color: rgb(176, 168, 249);
+    font-size:medium;
+    border-radius: 6px;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+#message {
+    border-radius: 10px;
+    padding: 100px;
+    
+}
+
+#name, #email {
+    border-radius: 10px;
+}
+
+#details, #details2, #details3 {
+   position:relative;
+}
