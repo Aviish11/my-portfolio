@@ -8,9 +8,6 @@ const emailError = document.getElementById('emailError');
 const button = document.getElementById('button');
 const details = document.getElementById('details');
 
-button.addEventListener('click', () => {
-    details.style.display("block");
-})
 
 form.addEventListener('submit', function(event) {
     nameError.textContent = '';

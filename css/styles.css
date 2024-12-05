@@ -97,3 +97,7 @@ button{
 #details, #details2, #details3 {
    position:relative;
 }
+
+html {
+    scroll-behavior: smooth;
+}
