@@ -10,6 +10,9 @@ const details = document.getElementById('details');
 
 const toggleThemeButton = document.getElementById('toggleTheme');
 
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projects = document.querySelectorAll('.project');
+
 
 
 form.addEventListener('submit', function(event) {
@@ -40,3 +43,17 @@ toggleThemeButton.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
 
 });
+
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const category = this.getAttribute('data-category');
+      projects.forEach(project => {
+        if (project.getAttribute('data-category') === category || category === 'all') {
+          project.style.display = 'block';
+        } else {
+          project.style.display = 'none';
+        }
+      });
+    });
+  });
