@@ -8,6 +8,9 @@ const emailError = document.getElementById('emailError');
 const button = document.getElementById('button');
 const details = document.getElementById('details');
 
+const toggleThemeButton = document.getElementById('toggleTheme');
+
+
 
 form.addEventListener('submit', function(event) {
     nameError.textContent = '';
@@ -32,3 +35,8 @@ function validateEmail(email) {
     const re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 return re.test(String(email).toLowerCase());
 }
+
+toggleThemeButton.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+
+});
